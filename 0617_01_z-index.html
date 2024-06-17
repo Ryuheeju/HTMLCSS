@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        position: relative;
+      }
+      div:first-child {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+        z-index: 1;
+      }
+      /* z-index는 숫자가 클수록 앞으로 나온다 */
+      div:nth-child(2) {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        top: -50px;
+        z-index: -1;
+      }
+      /* z-index는 숫자가 클수록 앞으로 나온다
+      같은숫자는 나중에 만들어진(스크립트 아래있는)것이 더 앞에보인다 */
+      div:nth-child(3) {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        top: -100px;
+      }
+      p {
+        /* positon이 없기때문에 기본 static값이기때문에 요소를 이동할수없다 */
+        left: 100px;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <p>문단태그</p>
+  </body>
+</html>

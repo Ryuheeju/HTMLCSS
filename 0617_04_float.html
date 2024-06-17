@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 1200px;
+        background-color: #ccc;
+        margin: 20px auto;
+      }
+      .parent > div {
+        width: 300px;
+        height: 100px;
+      }
+      .parent > div:nth-child(1) {
+        background-color: red;
+      }
+      .parent > div:nth-child(2) {
+        background-color: blue;
+      }
+      .parent > div:nth-child(3) {
+        background-color: yellow;
+      }
+      .top {
+        overflow: hidden;
+      }
+      .top > div {
+        float: left;
+      }
+
+      .center {
+        position: relative;
+        height: 100px;
+      }
+      .center > div {
+        position: absolute;
+      }
+      .center > div:nth-child(1) {
+        background-color: red;
+        left: 0;
+      }
+      .center > div:nth-child(2) {
+        background-color: blue;
+        left: 200px;
+      }
+      .center > div:nth-child(3) {
+        background-color: yellow;
+        left: 400px;
+      }
+      .bottom {
+        font-size: 0px;
+      }
+      .bottom > div {
+        display: inline-block;
+        font-size: 16px;
+        vertical-align: top;
+        /* vertical-align: top; 인라인속성일때만 가능한 수직정렬*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent top">
+      <div>111</div>
+      <div>222</div>
+      <div></div>
+    </div>
+    <div class="parent center">
+      <div>111</div>
+      <div>222</div>
+      <div></div>
+    </div>
+    <div class="parent bottom">
+      <div>111</div>
+      <div>222</div>
+      <div></div>
+    </div>
+  </body>
+</html>

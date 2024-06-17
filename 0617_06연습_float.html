@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .one > div {
+        float: left;
+        height: 100px;
+      }
+      .one > div:nth-child(1) {
+        width: 100%;
+        background-color: red;
+      }
+      .one > div:nth-child(2) {
+        width: 100%;
+        background-color: blue;
+      }
+      .two > div {
+        height: 500px;
+        float: left;
+      }
+      .two > div:nth-child(1) {
+        width: 20%;
+        background-color: green;
+      }
+      .two > div:nth-child(2) {
+        width: 70%;
+        background-color: pink;
+      }
+      .two > div:nth-child(3) {
+        width: 10%;
+        background-color: green;
+      }
+      .three > div {
+        width: 100%;
+        float: left;
+        height: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="one">
+        <div>1</div>
+        <div>2</div>
+      </div>
+      <div class="two">
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+      <div class="three"><div>6</div></div>
+    </div>
+  </body>
+</html>
