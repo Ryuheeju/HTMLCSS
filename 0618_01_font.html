@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 30px;
+      }
+      /* :root {
+        font-size: 30px;
+      } */
+      p {
+        font-size: 200%;
+        font-family: Arial, 돋음, Dotum, sans-serif;
+        width: 100%;
+        background-color: red;
+        margin: 50px 0;
+        padding: 50px;
+        width: 1em;
+      }
+      .parent {
+        font-size: 50px;
+        background-color: red;
+        width: 2em;
+        /* em은 폰트사이즈에 영향을 받는다 */
+        height: 500px;
+      }
+      .child {
+        font-size: 0.5rem;
+        background-color: yellow;
+        padding: 50px;
+        opacity: 0.5;
+      }
+      /* 
+      font-size: 20%; : 기본16px의20% 
+      font-family:두개의단어는 ""으로 묶어줘야한다.영어먼저쓰고 한글폰트를 쓴다
+      em:부모의 폰트사이즈에 따라 달라진다.
+      16px:1em:12pt:100% 
+      rem:최상위(html)의 폰트사이즈를 따라간다.*/
+    </style>
+  </head>
+  <body>
+    <p>그린컴퓨터아트학원Wepdesign</p>
+    <p>wep design</p>
+    <div class="parent">
+      parent
+      <div class="child">child</div>
+    </div>
+  </body>
+</html>

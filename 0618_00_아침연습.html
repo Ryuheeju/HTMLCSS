@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .info {
+        width: 1200px;
+        margin: 0 auto;
+        border: 1px solid;
+        overflow: hidden;
+      }
+      .info > div {
+        float: left;
+        height: 50px;
+      }
+      .info > div:first-child {
+        background-color: skyblue;
+      }
+      .info > :nth-child(2) {
+        background-color: pink;
+      }
+      .info > :nth-child(3) {
+        background-color: yellow;
+      }
+      .info > :nth-child(4) {
+        background-color: plum;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- z-index는 포지션이 있어야 사용할수있다.
+    블럭요소가 세로로만 나열되기때문에 float이나 display를 바꾸어 가로나열이 가능하다-->
+    <!-- float은 아래요소를 끌어오기때문에 부모요소에 overflow를 적용해줘야한다. -->
+    <div class="info">
+      <div>left</div>
+      <div>right</div>
+      <div>none</div>
+      <div>inherit</div>
+    </div>
+  </body>
+</html>
