@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      p{width: 300px;
+      border: 1px solid;
+      margin: 20px;
+    }
+    p:nth-child(1){white-space: normal;}/* 연속공백적용X 부모을 벗어나지 않고 자동으로 줄바꿈된다. */
+    p:nth-child(2){white-space: nowrap;}/* 연속공백적용X 부모를 벗어남  */
+    p:nth-child(3){white-space: pre;}/* 연속공백처리O길면 부모를 벗어남 */
+    p:nth-child(4){white-space: pre-wrap;}/* 연속공백처리O길면 부모를 벗어나지않음 */
+    p:nth-child(5){white-space: pre-line;}/* 연속공백처리x 줄바꿈 자동? */
+    div{width: 300px;
+    border: 1px solid;white-space: nowrap;
+    overflow: hidden;text-overflow: ellipsis;
+    opacity: .2;
+    }
+    /* text-overflow: clip */
+   </style>
+  </head>
+  <body>
+    <p>
+      L orem_white-space: normal
+      Ipsum is simply dummy text of the printing and typesetting
+      industry.
+    </p>
+    <p>
+      L orem_white-space: nowrap
+      Ipsum is simply dummy text of the printing and typesetting
+      industry.
+    </p>
+    <p>
+      L orem_white-space: pre
+      Ipsum is simply dummy text of the printing and typesetting
+      industry.
+    </p>
+    <p>
+      L orem_white-space: pre-wrap
+      Ipsum is simply dummy text of the printing and typesetting
+      industry.
+    </p>
+    <p>
+      L orem_white-space: pre-line
+      Ipsum is simply dummy text of the printing and typesetting
+      industry.
+    </p>
+    <div>Lorem Ipsum is simply dummy text of the printing and typesetting
+      industry.</div>
+      <!--head시작-->
+      <header></header>
+      <div class="head"></div>
+      <!--head끝-->
+      <!--menu시작-->
+      <main></main>
+      <menu></menu>
+      <nav></nav>
+      <div class="menu"></div>
+      <!--menu끝-->
+      <!--footert시작-->
+      <div class="foot"></div>
+      <footer></footer>
+      <!--footert끝-->
+  </body>
+</html>
