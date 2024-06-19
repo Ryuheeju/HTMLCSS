@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position연습</title>
+  <style>
+    *{margin: 0 auto;}
+    .info{
+    width: 1350px;
+    height: 1006px;
+    background-color: antiquewhite;
+    margin: 100px auto;
+    position: relative;
+    }
+    .info div{border: 1px solid;
+    width: 200px;/* 상자사이즈가로 */
+    height: 200px;/* 상자사이즈높이 */
+    /*text-align: center; 글자가로가운데정렬 */
+    /* line-height: 200px;글자세로가운데정렬 */
+    position: absolute;
+    }
+    .info div:nth-child(1){
+      width: 460px;
+      height: 563px;
+      background-color: pink;
+      position: absolute;
+      left: 0px;
+      z-index: 5;
+    }
+    .info div:nth-child(2){
+      width: 690px;
+      height: 626px;
+      background-color: lightblue;
+      position: relative;
+      padding: 144px 150px 236px 510px;
+      z-index: 3;
+    }
+    .info div:nth-child(3){
+      background-color: lavenderblush;
+      position: absolute;
+      z-index: 4;
+    }
+    .info div:nth-child(4){
+      background-color: lightyellow;
+      position: absolute;
+      left: 400px;
+      z-index: 2;
+    }
+    .info div:nth-child(5){
+      background-color: lavender;
+      position: absolute;
+      left: 500px;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="info">
+    <div>태그1</div>
+    <div>
+      <h1>문장타이틀</h1>
+      <h2>문장소제목</h2>
+      <p>문장본문내용텍스트텍스트텍스트텍스트텍스트</p>
+      <p>문장본문내용텍스트텍스트텍스트텍스트텍스트</p>
+      <p>문장본문내용텍스트텍스트텍스트텍스트</p>
+    </div>
+    <div>태그3</div>
+    <div>태그4</div>
+    <div>태그5</div>
+  </div>
+</body>
+</html>
