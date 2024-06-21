@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .wrap{margin: 0 auto;width: 1000px;font-size: 0;}
+        .dir{overflow:hidden;}/* 요소가 위로 따라 올라올때 */
+        .dir>div{float:left;}
+        .dir .directory{font-size: 14px;position: relative;left: 250px;z-index: 2;}
+        .directory a{float: right;padding: 10px;position: relatiave;}
+        a:hover{background-color: #FC909A;}
+        .dir .food02{float:right;}
+        .con{overflow: hidden;}/* 요소가 위로 따라 올라올때 */
+        .con>div{float: left;}
+        .food{position: relative;z-index: 1;}
+        .con .side{position: relative;top: 160px;}   
+        .con .side .nav{position: relative;}        
+        .number p:nth-child(1){width: 100px;height: 100px;background-color: #FDDEE1;position: relative;border-radius: 50%;font-size: 50px;color: #FC909A;text-align: center;line-height: 100px;margin: 0 auto;font-weight: bold;}   
+        .number{border-left: 1px solid #ccc;}     
+        .number p:nth-child(2){font-size: 14px;color: #DE0015;background-color: #FDDEE1;margin: 10px auto 0;padding: 8px;width: 80%;height: 20px;line-height: 20px;text-transform: uppercase;font-weight: bold;}
+        .contents li{font-size: 16px;border-bottom: 1px solid lightgray;padding: 10px;width: 100px;position: relative;}
+        .nav .banner{margin:100px 0 auto;}
+        .nav .banner div{background-color: #D7D7D7;font-size: 12px;border: 1px solid;width: 100px;padding: 10px;}
+        .page img{float: right;}
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top"><img src="images/food_img/top.gif" alt="top"></div>
+    <div class="dir">
+        <div class="food01"><img src="images/food_img/food_01.gif" alt="food_01"></div>
+        <div class="directory">
+            <a href="#">E-MAGRZINE</a>
+            <a href="#">SPECIAL</a>
+            <a href="#">SUMMER</a>
+           <a href="#">AUGUST/2003/</a>
+        </div>
+        <div class="food02"><img src="images/food_img/food_02.gif" alt="food_02"></div>
+    </div>
+    <div class="con">
+        <div class="note"><img src="images/food_img/note.gif" alt="note"></div>
+        <div class="food"><img src="images/food_img/image.gif" alt="image"></div>
+        <div class="side">
+            <div class="number">
+                <p>08</p>
+                <p>FOOD&DIET</p>
+            </div>
+            <div class="nav">
+                <ul class="contents">
+                    <li>01.content</li>
+                    <li>02.content</li>
+                    <li>03.content</li>
+                    <li>04.content</li>
+                    <li>05.content</li>
+                </ul>
+                <div class="banner">
+                    <div>content banner</div>
+                    <div>content banner</div>
+                    <div>content banner</div>
+                </div>
+            </div>
+        </div>
+        <div class="page"><img src="images/food_img/page.gif" alt="page"></div>
+    </div>
+    <div class="bot"><img src="images/food_img/bottom.gif" alt="bot"></div>
+    </div>
+</body>
+</html>
