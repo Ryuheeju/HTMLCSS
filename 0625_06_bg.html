@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /**{margin: 0;
+        padding: 0;}*/
+        body>p{
+            width: 1200px;
+            height: 1300px;
+            border: 1px solid;
+        }
+        body>p:first-child{
+            background-color: red;
+        }
+        body>p:nth-child(2){
+            background-image: url(/images/photo1.jpg);
+        }
+        body>p:nth-child(3){
+            background-image: url(/images/photo1.jpg);
+            background-position: 50%;
+            background-repeat: no-repeat;/* 바둑판 안함 */
+            background-attachment: fixed;/* 스크롤 하더라도 그 자리에 고정 */
+        }
+        div p{
+            border-width: 20px;
+            padding: 100px;
+            width: 200px;
+            height: 200px;
+            border-color: rgba(0, 0, 0, 0.3);
+            background-image: url(/images/photo1.jpg);
+            background-position: 0 0;
+            border-style: solid;
+            background-repeat: no-repeat;
+        }
+        div p:first-child{
+            background-origin: border-box;/* 보더에서부터 이미지가 시작 */
+        }
+        div p:nth-child(2){
+            background-origin: padding-box;/* 패딩에서부터 이미지가 시작 */
+        }
+        div p:nth-child(3){
+            background-origin: content-box;/* 컨텐츠에서 이미지가 시작 */
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div>
+        <p>boder-box</p>
+        <p>padding-box</p>
+        <p>content-box</p>
+    </div>
+</body>
+</html>
