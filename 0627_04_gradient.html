@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 500px;
+            height: 500px;
+        }
+        p:first-child{
+            background-image: radial-gradient(at 30% 20%,red,blue);
+            color: white;/*그라디언트중심이동*/
+        }
+        p:nth-child(2){
+            background-image: radial-gradient(closest-side at 30% 20%,red,blue);
+            color: white;/*사이드로이동*/
+        }
+        p:nth-child(3){
+            background-image: radial-gradient(closest-corner at 30% 20%,red,blue);
+            color: white;/*코너로이동*/
+        }
+        p:nth-child(4){
+            background-image: radial-gradient(farthest-corner at 30% 20%,red,blue);
+            color: white;/*코너로 커짐*/
+        }
+        p:nth-child(5){
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <p>at</p>
+    <p>closest-side</p>
+    <p>closest-corner</p>
+    <p>farthest-corner</p>
+    <p></p>
+</body>
+</html>
