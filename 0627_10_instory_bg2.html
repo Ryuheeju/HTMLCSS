@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        .wrap{
+            background-color: #d3222a;
+        }
+        /* .wrap{
+            width: 1000px;
+            margin: 0 auto;
+        } */
+        .top{
+            width: 1000px;
+            margin: 0 auto;
+            height: 50px;
+            text-align: right;
+        }
+        .top>p{
+            height: 100%;
+            color: #fff;
+            float: right;
+            height: 100px;
+            margin: 10px;
+        }
+        .pattern{
+            height: 82px;/*font-size:0;*/
+            background-image: url(./images/pattern.gif);
+            }
+        .pattern_inner{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .main{
+            height: 625px;/*overflow: hidden;의미가 없어짐*/
+            width: 1000px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .main>div{
+            float: left;/*부모의 높이가 사라짐...그래서 부모한테 hidden을 줌*/
+        }
+        .main>div:last-child{
+            width: 514px;
+            height: 100%;
+            background-image: url(./images/index_main_02.gif);
+        }
+        .main>div:nth-child(2){
+            color: #fff;
+            font-size: 23px;
+            font-weight: bold;
+        }
+        .foot{
+            clear: left;/*float:left준거*/
+            height: 100px;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+            line-height: 100px;
+        }
+        .foot_inner{
+            width: 1000px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top">
+            <p>ITALIAN</p>
+            <p>CHINESE</p>
+            <p>JAPANESE</p>
+            <p>로그인</p>
+            <p>회원가입</p>
+        </div>
+        <div class="pattern"><div class="pattern_inner"><img src="./images/index_pattern.gif" alt="pattern"></div></div>
+        <div class="main">
+            <div><img src="./images/index_main_01.gif" alt="index_main_01"></div>
+            <div><p>Home 메인 페이지입니다.</p></div>
+        </div>
+        <div class="foot">
+            <div class="foot_inner"><img src="./images/copyright.gif" alt="copyright"></div>
+        </div>
+    </div>
+</body>
+</html>

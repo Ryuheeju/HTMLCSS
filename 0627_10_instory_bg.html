@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        body{
+            background-color: #d3222a;
+        }
+        .wrap{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .top{
+            text-align: right;
+        }
+        .pattern{
+            height: 82px;/*font-size:0;*/
+            background-image: url(./images/pattern.gif);
+        }
+        .main{
+            height: 625px;/*overflow: hidden;의미가 없어짐*/
+            overflow: hidden;
+        }
+        .main>div{
+            float: left;/*부모의 높이가 사라짐...그래서 부모한테 hidden을 줌*/
+        }
+        .main>div:last-child{
+            width: 514px;
+            height: 100%;
+            background-image: url(./images/index_main_02.gif);
+        }
+        .foot{
+            clear: left;/*float:left준거*/
+            height: 100px;
+            background-color: #fff;
+            text-align: center;
+            line-height: 90px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top"><img src="./images/index_top.gif" alt="index_top"></div>
+        <div class="pattern"><img src="./images/index_pattern.gif" alt="pattern"></div>
+        <div class="main">
+            <div><img src="./images/index_main_01.gif" alt="index_main_01"></div>
+            <div><p>Home 메인 페이지입니다.</p></div>
+        </div>
+        <div class="foot">
+            <img src="./images/copyright.gif" alt="copyright">
+        </div>
+    </div>
+</body>
+</html>
