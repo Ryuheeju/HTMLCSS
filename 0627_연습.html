@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrap{
+      width: 1000px;
+      margin: 0 auto;
+    }
+    .top{text-align: center;
+      background-color: lightcoral;
+    }
+    .menu{
+      text-align: center;
+      background-color: skyblue;
+    }
+    .main{
+      text-align: center;
+      background-color: goldenrod;
+      height: 200px;
+    }
+    .main>div{
+      width: 50%;
+      height: 100%;
+      background-color: aquamarine;
+      float: right;
+    }
+    .main>div>div{
+      height: 50px;
+      background-color: #ccc;
+      margin: 5px;
+    }
+    .bottom{
+      text-align: center;
+      background-color: plum;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">top</div>
+    <div class="menu">menu</div>
+    <div class="main">main
+      <div>right
+        <div>r_top</div>
+        <div>r_m</div>
+        <div>r_b</div>
+      </div>
+    </div>
+    <div class="bottom">bottom</div>
+  </div>
+</body>
+</html>
