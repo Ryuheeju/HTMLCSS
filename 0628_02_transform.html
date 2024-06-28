@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        div{
+            margin: 0 auto;
+            width: 1210px;
+            height: 300px;
+            border: 1px solid;
+        }
+        div .first{
+            background: #fff;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            transform: rotate(-5deg);
+            float: left;
+            position: relative;
+        }
+        div .first:nth-of-type(2){
+            transform: rotate(5deg);
+        }
+        div .first:nth-of-type(4){
+            transform: rotate(5deg);
+        }
+        .photo1{
+            margin-top: 15px;
+            width: 250px;
+            height: 250px;
+            background-color: #ccc;
+            background-image: url(./images/photo1.jpg);
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="first">
+            <div class="photo1"></div>
+            <p>그린컴퓨터아트학원</p>
+        </div>
+        <div class="first">
+            <div class="photo1"></div>
+            <p>그린컴퓨터아트학원</p>
+        </div>
+        <div class="first">
+            <div class="photo1"></div>
+            <p>그린컴퓨터아트학원</p>
+        </div>
+        <div class="first">
+            <div class="photo1"></div>
+            <p>그린컴퓨터아트학원</p>
+        </div>
+    </div>
+</body></html>
