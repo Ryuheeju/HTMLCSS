@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        .wrap{
+            margin: 20px auto;
+            width: 1200px;
+            height: 200px;
+            border: 1px solid;
+            overflow: hidden;
+        }
+        .wrap p{
+            width: calc(100% / 4);
+            height: 200px;
+            float: left;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        .wrap p img{
+            width: 310px;
+            transition: all 1s;
+        }
+        .wrap p img:hover{
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <p><img src="./images/photo1.jpg" alt="photo1"></p>
+        <p><img src="./images/photo2.jpg" alt="photo2"></p>
+        <p><img src="./images/photo3.jpg" alt="photo3"></p>
+        <p><img src="./images/photo4.jpg" alt="photo4"></p>
+    </div>
+</body>
+</html>

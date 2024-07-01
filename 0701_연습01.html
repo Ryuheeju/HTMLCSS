@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .wrap>p{
+            width: 200px;
+            border: 2px solid pink;
+            margin: 10px auto;
+            padding: 20px;
+            text-align: center;
+            transition: 0.5s;
+            color: red;
+        }
+        p:first-child:hover{
+            background: pink;
+            color: #fff;
+        }
+        p:nth-child(2):hover{
+            transform: translate(70px);
+        }
+        p:nth-child(3):hover{
+            border-width: 10px;
+        }
+        p:nth-child(4):hover{
+            width: 300px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <p>color change</p>
+        <p>offset change</p>
+        <p>border change</p>
+        <p>size change</p>
+    </div>
+</body>
+</html>

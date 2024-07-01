@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .content{
+            width: 1000px;
+            margin: 20px auto;
+            border: 1px solid;
+        }
+        p{
+            width: 100px;
+            height: 100px;
+            background: pink;
+            transition: all 2s;
+        }
+        p:first-child:hover{
+            transform: translate(100px);
+        }
+        p:nth-child(2):hover{
+            transform: translate(200px);
+        }
+        p:nth-child(2):hover{
+            transform: translate(200px);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p></p>
+    </div>
+    <div class="content">
+        <p></p>
+    </div>
+    <div class="content">
+        <p></p>
+    </div>
+</body>
+</html>
